@@ -1,6 +1,6 @@
 # A little showcase
 
-A little showcase to discuss issue [TODO](todo)
+A little showcase to discuss issue https://github.com/sveltejs/kit/issues/13281
 
 ## Context
 
