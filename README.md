@@ -1,38 +1,17 @@
-# sv
+# A little showcase
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A little showcase to discuss issue [TODO](todo)
 
-## Creating a project
+## Context
 
-If you're seeing this, you've probably already done this step. Congrats!
+The newly added `page` from `$app/state` exposes runes in client mode but not in server mode.  
+This means that runes created with `$derived` based on `page.params` or others will work as expected in client but not in server...
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Reproduction
 
-# create a new project in my-app
-npx sv create my-app
-```
+Clone this repo, run `npm ci` and `npm run build`.
 
-## Developing
+Notice that in the prerendered routes:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+* in `build/Rich.html` you can find the text `Route name as uppercase RICH`
+* in `build/Simon.html` you can find the text `Route name as uppercase RICH` !!!

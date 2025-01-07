@@ -1,2 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1>Showcase using page params wtih <code>$derived</code></h1>
+
+<a href="/Rich">Link to Rich</a>
+<a href="/Simon">Link to Simon</a>
